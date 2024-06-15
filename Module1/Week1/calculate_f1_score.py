@@ -1,8 +1,8 @@
 def calc_f1_score(tp, fp, fn):
-    assert type(tp)==int, "tp must be int"
-    assert type(fp)==int, "fp must be int"
-    assert type(fn)==int, "fn must be int"
-    assert tp>0 and fp>0 and fn>0, "tp and fp and fn must be greater than zero"
+    assert isinstance(tp, int), "tp must be int"
+    assert isinstance(fp, int), "fp must be int"
+    assert isinstance(fn, int), "fn must be int"
+    assert tp > 0 and fp > 0 and fn > 0, "tp and fp and fn must be greater than zero"
 
     precision = tp/(tp+fp)
     recall = tp/(tp+fn)
